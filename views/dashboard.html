@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Super Gym</title>
+</head>
+
+<body>
+    <h1>Bienvenido a tu Dashboard</h1>
+    <p id="welcome-message"></p>
+    <button id="logout">Cerrar Sesión</button>
+
+    <script>
+        // Verificar si el token existe
+        const token = localStorage.getItem('token');
+        if (!token) {
+            alert('No estás autenticado. Redirigiendo al login...');
+            window.location.href = 'login.html';
+        }
+
+        // Ejemplo de cómo mostrar información del usuario (si el backend tiene un endpoint de perfil)
+        async function fetchUserProfile() {
+            try {
+                const response = await fetch('http://localhost:3000/api/auth/me', {
+                    headers: { 'Authorization': `Bearer ${token}` },
+                });
+
+                if (response.ok) {
+                    const user = await response.json();
+                    document.getElementById('welcome-message').textContent = `Hola, ${user.nombre}`;
+                } else {
+                    alert('Error al obtener información del usuario.');
+                }
+            } catch (error) {
+                console.error('Error al cargar el perfil:', error);
+            }
+        }
+
+        // Llamar a la función para cargar el perfil
+        fetchUserProfile();
+
+        // Logout
+        document.getElementById('logout').addEventListener('click', () => {
+            localStorage.removeItem('token'); // Eliminar el token
+            alert('Sesión cerrada. Redirigiendo al login...');
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+
+</html>

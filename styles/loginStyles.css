@@ -1,0 +1,205 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    background-image: url("../assets/Fondo.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.log-in-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.log-in {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    width: 50rem;
+    max-width: 400px;
+    position: relative;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Logo Super Gym */
+.logo {
+    position: absolute;
+    top: -12rem;
+    left: -35rem;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    object-fit: contain;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+    width: 100%;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #d1e9ff;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #2d55fb;
+    outline: none;
+}
+
+.forgot {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    color: #1570ef;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-decoration: none;
+    position: relative;
+    right: 8rem;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    right: -1rem;
+}
+
+button.primary {
+    background-color: #2d55fb;
+    color: white;
+}
+
+button.primary:hover {
+    background-color: #1a3db8;
+}
+
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del elemento padre */
+}
+
+a:hover {
+    text-decoration: none; /* Asegura que no aparezca subrayado al pasar el cursor */
+    color: inherit; /* Mantiene el mismo color al hacer hover */
+}
+
+
+.don-t-have-an {
+    font-size: 14px;
+    color: #98a2b3;
+    margin-right: 5px;
+    position: relative;
+    right: -4.5rem;
+}
+
+.sign-up {
+    font-size: 14px;
+    color: #1570ef;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    right: -4.5rem;
+}
+
+.sign-up:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    .log-in {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .logo {
+        width: 120px;
+        height: 120px;
+        top: -60px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .forgot {
+        right: 0;
+    }
+}
+
+/* Media Queries para laptops de 1280 x 720 */
+@media (max-width: 1280px) {
+    .log-in {
+        max-width: 350px;
+        padding: 30px;
+    }
+
+    .logo {
+        width: 130px;
+        height: 130px;
+        top: -12rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .forgot {
+        right: 0;
+    }
+}

@@ -1,0 +1,59 @@
+.centerElement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Titulo{
+padding-left: 16rem !important;
+padding-bottom: .5rem;
+font-size: 3rem;
+}
+
+main{
+margin-left: 5rem !important;
+}
+
+#body{
+padding: .7rem;
+padding-left: 5rem;
+}
+
+#userName{
+ font-size: 2rem;
+}
+
+p{
+font-size: 1.2rem;
+padding-bottom: 1rem;
+}
+
+#infoUsuario{
+padding-left: 5rem;
+}
+
+#tipoUsuario{
+font-size: 1.5rem;
+}
+
+input{
+font-size: 1.4rem !important;
+}
+#cobroUsuario{
+padding-left: 5rem;
+
+}
+#pagosTitulo{
+padding-bottom: 2rem;
+width: 25rem !important;
+}
+#detallePago{
+font-size: 1.4rem !important;
+width: 25rem !important;
+}
+
+footer{
+    background-color: rgb(50, 50, 99);
+    padding: 3rem;
+    color: #FFFFFF;
+}

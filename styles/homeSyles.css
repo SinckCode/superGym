@@ -1,0 +1,201 @@
+header{
+    background-color: #3285D2;
+    height: 11rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 12rem;
+    width: 110rem;
+}
+
+nav img{
+    margin: 0.5rem;
+    margin-left: 2rem;
+    position: relative;
+    left: 2rem;
+    top: -0.5rem;
+    width: 9rem;
+    height: 9rem;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    list-style: none;
+    color: #3285D2;
+}
+
+nav ul li{
+    background-color: #FFFFFF;
+    margin: 1rem;
+    margin-top: .5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 170px;
+    height: 60px;
+    border-radius: 1.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 799;
+    font-size: 20px;
+}
+
+#LogIn{
+    color: #FFFFFF;
+    background-color: #091239;
+    margin-right: 4rem;
+}
+
+#LogIn a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.centerElement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    min-width: auto;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+main{
+    background-image: url("../assets/Fondo.png");
+}
+
+
+#MainLogo{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 9rem;
+}
+
+#Carrusel{
+    background-color: #FFFFFF;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-item img {
+    height: 14rem;
+    width: auto;
+    object-fit: cover;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño de la imagen al pasar el cursor */
+}
+
+footer{
+    background-color: rgb(50, 50, 99);
+    padding: 3rem;
+    color: #FFFFFF;
+}
+
+
+#Carrusel h3{
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.left-arrow {
+    position: absolute;
+    left: 10px;
+    top: 55rem;
+    transform: translateY(-50%);
+}
+
+.right-arrow {
+    position: absolute;
+    right: 10px;
+    top: 55rem;
+    transform: translateY(-50%);
+}
+
+div img{
+    border: 10;
+    border-color: black;
+}
+
+footer{
+    background-color: rgb(50, 50, 99);
+    padding: 3rem;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del elemento padre */
+}
+
+a:hover {
+    text-decoration: none; /* Asegura que no aparezca subrayado al pasar el cursor */
+    color: inherit; /* Mantiene el mismo color al hacer hover */
+}
+
+@media screen and (max-width: 1280px) and (max-height: 720px) {
+    header{
+        height: 7rem ;
+    }
+
+    nav{
+        height: 8.7rem;
+        width: 75rem;
+    }
+
+    nav img{
+        top: -0.9rem;
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+
+    nav ul li{
+        background-color: #FFFFFF ;
+        margin: 0.5rem;
+        margin-top: .5rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        width: 70px;
+        height: 15px;
+        border-radius: 1.2rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 799;
+        font-size: 15px;
+    }
+
+    .LOGIN{
+        color: #FFFFFF;
+        background-color: #091239;
+        margin-right: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem 1.5rem; /* Ajuste del relleno interno */
+        width: auto; /* Ajuste dinámico del ancho según el contenido */
+        height: 50px; /* Ajuste de la altura */
+        border-radius: 1.2rem;
+        font-family: 'Inter', sans-serif;
+        font-weight: 799;
+        font-size: 20px;
+    }
+}

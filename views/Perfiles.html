@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/perfilesPrimeStyl.css">
+    <title>Información de la Cuenta</title>
+</head>
+
+<body class="bg-light">
+
+    <!-- Main Content -->
+    <main class="container py-5">
+        <h1 class="text-center mb-5" id="Titulo">Información de la cuenta</h1>
+        <div class="row" id="body">
+            <!-- User Card -->
+            <div class="col-md-4 text-center mb-4">
+                <div class="card border-dark" id="fotoUsuario">
+                    <img src="../assets/gatoMamado.jpeg" class="card-img-top rounded" alt="Usuario">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold" id="userName">JUAN PÉREZ</h3>
+                        <p class="card-text">Membresía general</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Information -->
+            <div class="col-md-5" id="infoUsuario">
+                <form>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label" id="tipoUsuario">Teléfono</label>
+                        <input type="text" id="telefono" class="form-control" id="detalleUsuario" value="+524621569778">
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label" id="tipoUsuario">Correo</label>
+                        <input type="email" id="correo" class="form-control" id="detalleUsuario"
+                            value="joshuacastillo@hotmail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="matricula" class="form-label" id="tipoUsuario">Matrícula</label>
+                        <input type="text" id="matricula" class="form-control" id="detalleUsuario" value="370846">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tipoMembresia" class="form-label" id="tipoUsuario">Tipo de Membresía</label>
+                        <input type="text" id="tipoMembresia" class="form-control" id="detalleUsuario" value="General">
+                    </div>
+                    <div class="mb-3">
+                        <label for="costo" class="form-label" id="tipoUsuario">Costo</label>
+                        <input type="text" id="costo" class="form-control" id="detalleUsuario" value="$750">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fechaVencimiento" class="form-label" id="tipoUsuario">Próxima fecha de
+                            vencimiento</label>
+                        <input type="text" id="fechaVencimiento" class="form-control" id="detalleUsuario"
+                            value="27-Diciembre-2024">
+                    </div>
+
+                    <a href="./Pagos.html" class="btn btn-primary btn-lg w-100" style="background-color: #2D55FB;">PAGAR
+                        MEMBRESÍA</a>
+                </form>
+            </div>
+
+            <!-- Paid Monthly Payments -->
+            <div class="col-md-3" id="cobroUsuario">
+                <h2 id="pagosTitulo" class="centerElement">Mensualidades pagadas</h2>
+                <ul class="list-group">
+                    <li class="list-group-item" id="detallePago">Enero 2024 - $750</li>
+                    <li class="list-group-item" id="detallePago">Febrero 2024 - $750</li>
+                    <li class="list-group-item" id="detallePago">Marzo 2024 - $750</li>
+                    <li class="list-group-item" id="detallePago">Abril 2024 - $750</li>
+                    <li class="list-group-item" id="detallePago">Mayo 2024 - $750</li>
+                    <li class="list-group-item" id="detallePago">Junio 2024 - $750</li>
+                    <li class="list-group-item" id="detallePago">Julio 2024 - $750</li>
+                    <li class="list-group-item" id="detallePago">Agosto 2024 - $750</li>
+                    <li class="list-group-item" id="detallePago">Septiembre 2024 - $750</li>
+                    <li class="list-group-item" id="detallePago">Octubre 2024 - $750</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+          &copy;Copyright &copy; @Marcos Ariciaga Valdez
+          <br>
+          &copy;Copyright &copy; @Samuel Yoshua Guzmán Gutiérrez
+          <br>
+          &copy;Copyright &copy; @Angel David Onesto Frias
+          <br>
+          &copy;Copyright &copy; @Giorgio Lissandro Tellez Barron
+          <br>
+          &copy;Copyright &copy; Ricardo Islas Ramirez
+        </p>
+      </footer>
+</body>
+
+</html>

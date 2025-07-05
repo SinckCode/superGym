@@ -1,0 +1,108 @@
+.rowMembresia {
+    display: flex;
+    margin: 2rem;
+}
+
+.columnMembresia{
+    width: 33%;
+}
+
+body main{
+    font-family: 'Inter', sans-serif
+}
+
+h1{
+    font-size: 4rem;
+}
+
+
+
+.inscripcionTexto{
+    font-size: 4rem;
+    color: black;
+    position: absolute;
+    bottom: 1rem;
+    left: 10rem;
+}
+
+p{
+    font-size: 6rem;
+}
+
+.enviarButton{
+    margin-left: 2rem;
+    font-size: 2rem;
+    width: fit-content;
+    background-color: #3285D2;
+    color: white;
+    border-radius: 4rem;
+    padding: 1rem;
+}
+
+.blueBox{
+    padding: 1rem;
+    padding-top: 0.2rem;
+    border-radius: 1rem;
+    outline: solid #3285D2;
+    background-color: white;
+    color: #3285D2;
+    min-height: 80rem;
+    position: relative;
+}
+
+.blueBoxRight{
+    padding: 1rem;
+    padding-top: 0.2rem;
+    border-radius: 1rem;
+    outline: solid #3285D2;
+    background-color: #3285D2;
+    color: white;
+    min-height: 80rem;
+    position: relative;
+}
+
+.blueBox h1{
+    margin: 0%;
+    font-size: 7rem;
+}
+
+.blueBox h2{
+    margin: 1rem;
+    font-size: 4rem;
+}
+
+.blueBoxRight h1{
+    font-size: 4rem;
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.boxTextInput{
+    margin-left: 6rem;
+    margin: 3rem;
+}
+
+footer{
+    background-color: rgb(50, 50, 99);
+    padding: 3rem;
+    color: #FFFFFF;
+}
+
+footer p{
+    font-size: 1rem !important;
+}
+
+@media screen and (max-width: 1100px) {
+    .rowMembresia {
+        display: contents;
+        margin: 1rem;
+    }
+
+    .columnMembresia{
+        width: 95%;
+        padding: 1rem;
+    }
+}

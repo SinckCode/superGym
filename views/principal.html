@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/principal.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="sticky-top">
+        <nav>
+            <a onclick="cargarHome()">
+                <img src="../assets/Super_gym_logo.png" alt="superGymLogo">
+            </a>
+            <button id="menuToggle" aria-label="Abrir menú" class="sticky" onclick="toggleMenu()">☰</button>
+            <ul id="menuOptions">
+                <li id="LogIn">
+                    <a href="login.html " class="loginnnn">LOG IN</a>
+                </li>
+                <li onclick="cargarMembresia()">
+                    <a>MEMBRESIA</a>
+                </li>
+                <li onclick="cargarUbiacion()">
+                    <a>UBICACIÓN</a>
+                </li>
+                <li onclick="cargarProductos()">
+                    <a>PRODUCTOS</a>
+                </li>
+                <li onclick="cargarContacto()">
+                    <a>CONTACTO</a>
+                </li>
+                <li onclick="cargarServicios()">
+                    <a>SERVICIOS</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--MAIN-->
+    <main id="contenedorPrincipal">
+
+
+        <script src="../js/principal.js"></script>
+        <script src="../styles/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

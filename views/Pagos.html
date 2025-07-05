@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcos Ariciaga Valdez">
+    <meta name="date" content="16/10/2024">
+    <link rel="stylesheet" href="../styles/pagosStyle.css">
+    <title>SuperGym - Pagos</title>
+    <script>
+        function actualizarMonto() {
+            const membresia = document.getElementById('membresia').value;
+            const monto = document.getElementById('monto');
+            switch (membresia) {
+                case 'básica':
+                    monto.value = '$500';
+                    break;
+                case 'normal':
+                    monto.value = '$800';
+                    break;
+                case 'premium':
+                    monto.value = '$1200';
+                    break;
+                default:
+                    monto.value = '';
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+    <h2 class="main-title">Información de tu tarjeta</h2>
+    <div class="card-wrapper">
+        <div class="card">
+            <h3>Membresía</h3>
+            <select id="membresia" onchange="actualizarMonto()">
+                <option value="básica">Básica</option>
+                <option value="normal">Normal</option>
+                <option value="premium">Premium</option>
+            </select>
+            <p>Sitio web: <a href="https://www.supergym.com" target="_blank">www.supergym.com</a></p>
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" placeholder="Ingresa tu matrícula">
+            <label for="monto">Monto a pagar:</label>
+            <input type="text" id="monto" readonly>
+            <img src="../assets/MetodoDePago.png" alt="Métodos de pago">
+        </div>
+        <div class="card">
+            <img src="../assets/Captura Tarjeta.png" alt="Tarjeta" class="card-image">
+            <p>Por favor ingresa la información de tu tarjeta</p>
+            <input type="text" placeholder="Número de tarjeta" class="input-right">
+            <input type="text" placeholder="Fecha de expiración" class="input-right">
+        </div>
+    </div>
+    <div class="button-container">
+        <a href="./proncipal2.html" class="btn btn-secondary">Regresar</a>
+        <button href="./proncipal2.html" class="btn btn-primary">Pagar</button>
+    </div>
+    </main>
+    <footer>
+        <p>
+          &copy;Copyright &copy; @Marcos Ariciaga Valdez
+          <br>
+          &copy;Copyright &copy; @Samuel Yoshua Guzmán Gutiérrez
+          <br>
+          &copy;Copyright &copy; @Angel David Onesto Frias
+          <br>
+          &copy;Copyright &copy; @Giorgio Lissandro Tellez Barron
+          <br>
+          &copy;Copyright &copy; Ricardo Islas Ramirez
+        </p>
+      </footer>
+
+</body>
+
+</html>
