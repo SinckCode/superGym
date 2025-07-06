@@ -1,72 +1,129 @@
-readme:
-  title: "🏋️‍♂️ Super Gym - Sistema Web Integral"
-  description: >
-    Este proyecto es una plataforma web para la gestión de un gimnasio,
-    que combina un sitio web con información de servicios, productos y métodos de pago,
-    junto con una API backend para la administración de usuarios, membresías, servicios y productos.
+# 🏋️‍♂️ Super Gym - Sistema Web Integral
 
-  structure:
-    - assets: "Imágenes y recursos gráficos"
-    - js: "Scripts frontend"
-    - styles: "Hojas de estilo CSS"
-    - views: "Páginas HTML"
-    - gym-api: "Backend API (Node.js + Express + MongoDB)"
-    - listado.txt: "Listado de archivos"
+**Super Gym** es una plataforma web completa para la gestión de un gimnasio. Combina un **sitio web informativo** con detalles de servicios, productos y métodos de pago, junto con una **API backend** para administrar usuarios, membresías, pagos, productos y servicios.
 
-  features:
-    frontend:
-      - "Página principal con información del gimnasio"
-      - "Sección de servicios ofrecidos"
-      - "Métodos de pago visuales"
-      - "Galería de imágenes"
-      - "Estilos personalizados en styles/"
-      - "Scripts de interacción en js/"
-    backend:
-      - "CRUD de usuarios"
-      - "Gestión de membresías"
-      - "Registro de pagos"
-      - "Gestión de productos y servicios"
-      - "Conexión a base de datos MongoDB"
-      - "Estructura modular (models, routes)"
-      - "Configuración de desarrollo con nodemon"
+---
 
-  technologies:
-    frontend:
-      - HTML5
-      - CSS3
-      - JavaScript
-    backend:
-      - Node.js
-      - Express.js
-      - MongoDB
-      - Mongoose
+## 📂 Estructura del Proyecto
 
-  installation:
-    prerequisites:
-      - "Node.js instalado"
-      - "MongoDB en ejecución local o en la nube"
-    backend_steps:
-      - "Navega a la carpeta gym-api: cd gym-api"
-      - "Instala dependencias: npm install"
-      - "Configura variables de entorno si aplica"
-      - "Inicia el servidor: npm run dev o nodemon index.js"
-      - "Servidor en http://localhost:3000"
-    frontend_steps:
-      - "Abre el archivo principal en views/ en tu navegador (ej. index.html)"
+```
+super-gym/
+├── assets/       # Imágenes y recursos gráficos
+├── js/           # Scripts frontend
+├── styles/       # Hojas de estilo CSS
+├── views/        # Páginas HTML
+├── gym-api/      # Backend API (Node.js + Express + MongoDB)
+└── listado.txt   # Listado de archivos
+```
 
-  scripts:
-    backend:
-      - "npm run dev: Inicia el servidor en modo desarrollo con nodemon"
+---
 
-  screenshots:
-    note: "Puedes incluir aquí algunas imágenes de assets/ como ejemplos de diseño"
+## ✨ Funcionalidades
 
-  contributions:
-    steps:
-      - "Haz un fork del repositorio"
-      - "Crea una rama (feature/nueva-funcionalidad)"
-      - "Realiza tu commit (git commit -m 'Agregar nueva funcionalidad')"
-      - "Haz push a tu rama (git push origin feature/nueva-funcionalidad)"
-      - "Abre un Pull Request"
+### 🌐 Frontend
+- Página principal con información del gimnasio.
+- Sección de servicios ofrecidos.
+- Visualización de métodos de pago.
+- Galería de imágenes.
+- Estilos personalizados (`styles/`).
+- Scripts de interacción (`js/`).
 
-  license: "Este proyecto se distribuye bajo la licencia que definas (MIT, GPL, etc.)"
+### ⚙️ Backend
+- CRUD de usuarios.
+- Gestión de membresías.
+- Registro y consulta de pagos.
+- Gestión de productos y servicios.
+- Conexión con MongoDB mediante Mongoose.
+- Estructura modular (`models/`, `routes/`).
+- Configuración de desarrollo con **nodemon**.
+
+---
+
+## 🛠️ Tecnologías Utilizadas
+
+### Frontend
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+
+---
+
+## 🚀 Instalación y Puesta en Marcha
+
+### 📋 Requisitos Previos
+- Tener [Node.js](https://nodejs.org) instalado.
+- Tener MongoDB en ejecución (local o en la nube).
+
+---
+
+### ⚙️ Backend
+
+1. Navega a la carpeta del backend:
+   ```
+   cd gym-api
+   ```
+2. Instala las dependencias:
+   ```
+   npm install
+   ```
+3. Configura las variables de entorno si aplica (por ejemplo, conexión a MongoDB).
+4. Inicia el servidor en modo desarrollo:
+   ```
+   npm run dev
+   ```
+   El servidor estará disponible en [http://localhost:3000](http://localhost:3000).
+
+---
+
+### 🌐 Frontend
+
+Abre el archivo principal en tu navegador:
+```
+views/index.html
+```
+
+---
+
+## 📷 Capturas de Pantalla
+
+💡 **Nota:** Puedes incluir aquí imágenes de la carpeta `assets/` como ejemplos del diseño y funcionalidad.
+
+---
+
+## 📜 Scripts Útiles
+
+- `npm run dev`: Inicia el servidor backend en modo desarrollo con **nodemon**.
+
+---
+
+## 🤝 Contribuciones
+
+¿Quieres contribuir? ¡Eres bienvenido!  
+Sigue estos pasos:
+
+1. Haz un **fork** del repositorio.
+2. Crea una rama:
+   ```
+   git checkout -b feature/nueva-funcionalidad
+   ```
+3. Realiza tus cambios y commits:
+   ```
+   git commit -m "Agregar nueva funcionalidad"
+   ```
+4. Sube tu rama:
+   ```
+   git push origin feature/nueva-funcionalidad
+   ```
+5. Abre un **Pull Request**.
+
+---
+
+## 📝 Licencia
+
+Este proyecto se distribuye bajo la licencia que definas (MIT, GPL, etc.).
