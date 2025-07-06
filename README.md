@@ -90,11 +90,6 @@ views/index.html
 
 ---
 
-## 📷 Capturas de Pantalla
-
-💡 **Nota:** Puedes incluir aquí imágenes de la carpeta `assets/` como ejemplos del diseño y funcionalidad.
-
----
 
 ## 📜 Scripts Útiles
 
@@ -104,23 +99,13 @@ views/index.html
 
 ## 🤝 Contribuciones
 
-¿Quieres contribuir? ¡Eres bienvenido!  
-Sigue estos pasos:
-
-1. Haz un **fork** del repositorio.
-2. Crea una rama:
-   ```
-   git checkout -b feature/nueva-funcionalidad
-   ```
-3. Realiza tus cambios y commits:
-   ```
-   git commit -m "Agregar nueva funcionalidad"
-   ```
-4. Sube tu rama:
-   ```
-   git push origin feature/nueva-funcionalidad
-   ```
-5. Abre un **Pull Request**.
+          Marcos Ariciaga Valdez
+          
+          Samuel Yoshua Guzmán Gutiérrez
+          
+          Angel David Onesto Frias
+          
+          Giorgio Lissandro Tellez Barron
 
 ---
 
